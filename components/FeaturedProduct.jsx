@@ -5,21 +5,21 @@ import Image from "next/image";
 const products = [
   {
     id: 1,
-    image: assets.girl_with_headphone_image,
-    title: "Unparalleled Sound",
-    description: "Experience crystal-clear audio with premium headphones.",
+    image: assets.man_with_koreanrice,
+    title: "Bán Gạo Hàn Quốc",
+    description: "Gạo Hàn Quốc chất lượng cao, thơm ngon và bổ dưỡng.",
   },
   {
     id: 2,
     image: assets.girl_with_earphone_image,
-    title: "Stay Connected",
-    description: "Compact and stylish earphones for every occasion.",
+    title: "Bán Gạo Nhật Bản",
+    description: "Gạo Nhật Bản hảo hạng, dẻo thơm và giàu dinh dưỡng.",
   },
   {
     id: 3,
-    image: assets.boy_with_laptop_image,
-    title: "Power in Every Pixel",
-    description: "Shop the latest laptops for work, gaming, and more.",
+    image: assets.man_with_chineserice,
+    title: "Bán Gạo Trung Quốc",
+    description: "Gạo Trung Quốc ngon, giá cả hợp lý và dễ nấu.",
   },
 ];
 
@@ -45,7 +45,12 @@ const FeaturedProduct = () => {
                 {description}
               </p>
               <button className="flex items-center gap-1.5 bg-orange-600 px-4 py-2 rounded">
-                Buy now <Image className="h-3 w-3" src={assets.redirect_icon} alt="Redirect Icon" />
+                Buy now{" "}
+                <Image
+                  className="h-3 w-3"
+                  src={assets.redirect_icon}
+                  alt="Redirect Icon"
+                />
               </button>
             </div>
           </div>
